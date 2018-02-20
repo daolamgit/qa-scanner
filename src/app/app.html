@@ -1,7 +1,7 @@
 <div *ngIf="showSplash" class="splash">
-  <div class="spinner">
+  <div class="splash-spinner">
     <div class="double-bounce1"></div>
     <div class="double-bounce2"></div>
   </div>
 </div>
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-nav [@splash]="loginState" [root]="rootPage"></ion-nav>

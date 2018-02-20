@@ -1,21 +1,33 @@
 <ion-content padding scroll="false">
   <div class="login-container">
     <div class="login-wrap">
-      <form class="login-form">
+      <form [formGroup]="loginForm" class="login-form">
         <span class="form-title">Account Login</span>
 
         <div class="wrap-input">
-          <input type="text" class="login-input" placeholder="Email">
+          <input
+            type="text"
+            class="login-input"
+            placeholder="Email"
+            autocapitalize="none"
+            formControlName="email"
+          >
         </div>
 
         <div class="wrap-input">
-          <input type="password" class="login-input" placeholder="Password">
+          <input
+            type="password"
+            class="login-input"
+            placeholder="Password"
+            formControlName="password"
+          >
         </div>
 
         <div class="login-btn-container">
           <button class="login-btn" (click)="login()">
             <span *ngIf="!showSpinner">Sign in</span>
-            <ion-spinner color="#FFF" *ngIf="showSpinner"></ion-spinner></button>
+            <ion-spinner color="#FFF" *ngIf="showSpinner"></ion-spinner>
+          </button>
         </div>
 
         <div class="text-center-1">
