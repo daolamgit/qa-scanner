@@ -1,0 +1,33 @@
+<ion-content padding scroll="false">
+  <div class="login-container">
+    <div class="login-wrap">
+      <form class="login-form">
+        <span class="form-title">Account Login</span>
+
+        <div class="wrap-input">
+          <input type="text" class="login-input" placeholder="Email">
+        </div>
+
+        <div class="wrap-input">
+          <input type="password" class="login-input" placeholder="Password">
+        </div>
+
+        <div class="login-btn-container">
+          <button class="login-btn" (click)="login()">
+            <span *ngIf="!showSpinner">Sign in</span>
+            <ion-spinner color="#FFF" *ngIf="showSpinner"></ion-spinner></button>
+        </div>
+
+        <div class="text-center-1">
+          <span class="text-1">Forgot</span>
+          <span class="text-2">Username / Password?</span>
+        </div>
+
+        <div class="text-center-2">
+          <span class="text-1">Create an account?</span>
+          <span class="text-2">Sign up</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</ion-content>
