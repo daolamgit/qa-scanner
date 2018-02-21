@@ -12,12 +12,12 @@ import { MyApp } from './app.component';
 import { FirebaseService } from '../providers/firebase-service/firebase-service';
 
 const config = {
-  apiKey: "AIzaSyBoVeCiuN1y2D3GOcC9mRxXF2yKbPmXwDA",
-  authDomain: "qa-scanner-b6c67.firebaseapp.com",
-  databaseURL: "https://qa-scanner-b6c67.firebaseio.com",
-  projectId: "qa-scanner-b6c67",
-  storageBucket: "qa-scanner-b6c67.appspot.com",
-  messagingSenderId: "141541569066"
+  apiKey: "AIzaSyAXAfJ-6LTHkGBtOtlgLM9TdolquSri8qU",
+  authDomain: "qa-scanner-2665a.firebaseapp.com",
+  databaseURL: "https://qa-scanner-2665a.firebaseio.com",
+  projectId: "qa-scanner-2665a",
+  storageBucket: "qa-scanner-2665a.appspot.com",
+  messagingSenderId: "489657061775"
 };
 
 @NgModule({
